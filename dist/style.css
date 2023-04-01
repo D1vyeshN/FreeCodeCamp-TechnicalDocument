@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&family=Shantell+Sans:ital,wght@1,300&display=swap');
+
+
+
+/* original */
+
+.container{
+  display:flex;
+  font-family: 'Shantell Sans', cursive;
+}
+.maindiv{
+  display:flex;
+  align-items:right;
+  justify-content:right;
+}
+.navbardiv{
+  position: fixed;
+  width: 24%;
+}
+#navbar{
+  position: fixed;
+  width: 24%;
+  margin: 0 10px;
+}
+#navbar header{
+
+margin:15px;
+margin-top:5px;
+font-size:25px;
+width: 105%;
+}
+#navbar > div >li{
+    color: #4d4e53;
+    border: 1px solid;
+    list-style: none;
+    position: relative;
+    padding:6px;
+    width: 100%;
+    margin:0 10px;
+}
+li {
+    display: list-item;
+    text-align: left;
+}
+#navbar li a{
+  text-decoration: none;
+  color: #000;
+}
+#navbar li a:hover{
+color: #999;
+}
+
+main{
+  width:72%;
+  margin-top:-48px;
+  align-items:right;
+  justify-content:center;
+
+}
+
+code{
+  display:block;
+  padding:10px 4px;
+  background-color:#f7f7f7;
+  margin:4px;
+}
+main header{
+  font-size:25px;
+  padding:25px 0;
+  margin:10px 0px;
+  margin-bottom:-10px;
+  font-family: cursive;
+}
+section{
+  padding:0px;
+  margin:40px;
+}
+
+
+@media only screen and (max-width: 880px){
+
+.maindiv{
+  position:relative;
+  top:300px;
+  width: 100vw;
+}
+.navbardiv{
+  position:absolute;
+  width: 100vw;
+  max-height:300px;
+  
+}
+#navbar{
+  position: absolute;
+  width: 98%;
+  margin: 10px;
+}
+#navbar div{
+  width: 97%;
+  margin:10px 0;
+  max-height:210px;
+  overflow: auto;
+  border:1px solid;
+}
+#navbar header{
+margin:15px;
+margin-top:-5px;
+font-size:28px;
+max-height:100vh;
+width: 99%;
+display:flex;
+text-align:center;
+justify-content:center;
+}
+
+#navbar > div >li{
+    color: #4d4e53;
+    border: 1px solid;
+    list-style: none;
+    position: relative;
+    padding:5px;
+    width: 100%;
+    margin:0;
+}
+main{
+  position: realtive;
+  width:100%;
+  align-items:center;
+  justify-content:center;
+}
+
+}
